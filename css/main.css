@@ -1,106 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  nav {
-    background-color: #004080;
+}
+
+body {
+    font-family: "Lora", serif;
+    color: #080808;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
+    url("/img/img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: #000000;
     overflow: hidden;
-  }
-  
-  nav .logo img {
+}
+
+nav .logo img {
     height: 50px;
     float: left;
     margin: 5px 20px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     float: right;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline-block;
     margin: 0 15px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     line-height: 60px;
-  }
-  
-  header {
-    background-image: url('../images/banner.jpg');
-    background-size: cover;
+}
+
+header {
+    background-image: url("/img/banner.jpg");
+    background-color: rgba(79, 74, 74, 0.5);
+    background-blend-mode: darken;
     text-align: center;
-    color: #fff;
-    padding: 100px 0;
-  }
-  
-  section {
+    color: rgb(255, 255, 255);
+    padding: 250px 0;
+    font-size: 1.7em;
+    margin-bottom: 110px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+section#about p {
+    margin: 20px auto;
+    margin-bottom: 100px;
+    max-width: 50%;
+    word-break: break-word;
+    text-align: center;
+    color: white;
+}
+
+section#about {
+    text-align: center;
+}
+
+section {
     padding: 60px 20px;
     text-align: center;
-  }
-  
-  section#about img {
+}
+
+section h2 {
+    margin: 40px;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px gray;
+}
+
+section h3 {
+    margin: 70px;
+    color: #fffffff2;
+    box-shadow: 0px 2px 2px rgb(126, 115, 115);
+}
+
+section#about img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 0 auto;
+    box-shadow: 0 10px 25px rgba(234, 226, 226, 0.5);
+}
+
+section#services p {
+    margin: 20px auto;
+    max-width: 50%;
+    word-break: break-word;
+    text-align: center;
+    color: white;
+}
+
+.service {
+    margin: 50px;
+}
+
+section#services img {
     width: 50%;
     height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .service {
-    margin: 20px;
-  }
-  
-  .testimonial {
-    font-style: italic;
-    margin: 20px;
-  }
-  
-  footer {
+    margin-bottom: 0 auto;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
+
+footer {
     background-color: #004080;
     color: #fff;
     padding: 20px;
-  }
-  
-  footer .social-media {
+}
+
+footer .social-media {
     list-style-type: none;
-  }
-  
-  footer .social-media li {
+}
+
+footer .social-media li {
     display: inline-block;
     margin: 0 10px;
-  }
-  
-  footer .social-media li a {
+    align-items: center;
+}
+
+footer .social-media li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  form {
+}
+
+form {
     max-width: 400px;
     margin: auto;
     padding: 20px;
-  }
-  
-  form label {
+}
+
+form label {
     display: block;
     margin: 10px 0 5px;
-  }
-  
-  form input, form select {
+}
+
+form input,
+form select {
     width: 100%;
     padding: 8px;
-  }
-  
-  form button {
+}
+
+form button {
     margin-top: 20px;
     padding: 10px 20px;
-  }
+}
