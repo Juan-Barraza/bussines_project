@@ -7,25 +7,11 @@
 }
 
 
-body {
-    font-family: "Lora", serif;
-    color: #fcfcfc;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
-        url("/img/banner.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
     min-height: 100vh;
     justify-content: center;
     box-sizing: border-box;
-    max-width: 600px;
+    max-width: 800px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -37,24 +23,32 @@ body {
     padding: 20px;
     border-radius: 5px;
 }
+body {
+    font-family: "Lora", serif;
+    color: #fcfcfc;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
+        url("/img/banner.jpg");
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 form#registerForm h2 {
     margin: 40px;
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     font-family: "Lora", serif;
 }
 
 form#registerForm label {
-    margin-bottom: 30px; 
-    display: block; 
-    font-size: 1rem; 
-    font-weight: bold; 
-    color: #fff; 
-    text-align: left; 
-    letter-spacing: 0.05em; 
-    font-family: "Lora", serif;
+    padding-bottom: 10px;
+    margin-bottom: 50%;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
 }
 
 
@@ -70,7 +64,7 @@ form input {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
-    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 
