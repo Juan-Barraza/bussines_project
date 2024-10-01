@@ -58,7 +58,7 @@ header {
 section#about p {
     margin: 20px auto;
     margin-bottom: 100px;
-    max-width: 50%;
+    max-width: 70%;
     word-break: break-word;
     text-align: center;
     color: white;
@@ -84,6 +84,7 @@ section h3 {
     margin: 70px;
     color: #fffffff2;
     box-shadow: 0px 2px 2px rgb(126, 115, 115);
+    font-size: 1.4rem;
 }
 
 section#about img {
@@ -113,8 +114,9 @@ section#services img {
 }
 
 footer {
-    background-color: #004080;
-    color: #fff;
+    text-align: center;
+    background-color: #000000;
+    color: wheat;
     padding: 20px;
 }
 
@@ -129,8 +131,13 @@ footer .social-media li {
 }
 
 footer .social-media li a {
-    color: #fff;
+    color: wheat;
     text-decoration: none;
+    box-shadow: 0px 1px 1px rgb(159, 149, 149);
+}
+
+footer p {
+    margin-bottom: 20px;
 }
 
 form {
