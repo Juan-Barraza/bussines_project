@@ -10,6 +10,34 @@
     }
   
     section#about img {
-      width: 100%;
+      width: 90%;
     }
+    
+    .container {
+      padding: 20px; 
+  }
+
+  form {
+      width: 100%; 
+      padding: 10px; 
+  }
+
+  form#registerForm h2 {
+      font-size: 1.5rem; 
+  }
+
+  form input, form select {
+      font-size: 1rem; 
+      padding: 15px; 
+  }
+
+  form button {
+      font-size: 1rem; 
+      padding: 10px;
+  }
+
+  form#registerForm label {
+      font-size: 1rem; 
+      margin-bottom: 10px; 
+  }
   }
