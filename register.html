@@ -3,34 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Register</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
-  <form id="registerForm">
-    <h2>Create acount</h2>
-    <label for="nombres">Names:</label>
-    <input type="text" id="nombres" required>
-
-    <label for="apellidos">LastNames:</label>
-    <input type="text" id="apellidos" required>
-
-    <label for="correo">Email:</label>
-    <input type="email" id="correo" required>
-
-    <label for="contraseña">Password:</label>
-    <input type="password" id="contraseña" required>
-
-    <label for="genero">Generate:</label>
-    <select id="genero" required>
-      <option value="">Choose...</option>
-      <option value="masculino">Male</option>
-      <option value="femenino">Female</option>
-      <option value="otro">Other</option>
-    </select>
-
-    <button type="submit">Register</button>
-  </form>
+  <div class="container">
+    <form id="registerForm">
+      <h2>Create acount</h2>
+      <label for="nombres">Names:</label>
+      <input type="text" id="nombres" required>
+  
+      <label for="apellidos">LastNames:</label>
+      <input type="text" id="apellidos" required>
+  
+      <label for="correo">Email:</label>
+      <input type="email" id="correo" required>
+  
+      <label for="contraseña">Password:</label>
+      <input type="password" id="contraseña" required>
+  
+      <label for="genero">Generate:</label>
+      <select id="genero" required>
+        <option value="">Choose...</option>
+        <option value="masculino">Male</option>
+        <option value="femenino">Female</option>
+        <option value="otro">Other</option>
+      </select>
+  
+      <button type="submit">Register</button>
+    </form>
+  </div>
 
 </body>
 </html>
