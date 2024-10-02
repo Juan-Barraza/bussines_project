@@ -44,6 +44,11 @@ form#registerForm h2 {
     font-family: "Lora", serif;
 }
 
+form#registerForm h2:hover {
+    color: #000000;
+    transition: color 0.2s ease;
+}
+
 form#registerForm label {
     padding-bottom: 10px;
     margin-bottom: 50%;
@@ -82,8 +87,8 @@ form select {
 
 form button {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(102, 103, 105) ;
-    color: rgb(203, 194, 194);
+    background-color:rgb(97, 97, 110) ;
+    color: rgb(255, 255, 255);
     width: 100%;
     padding: 10px;
     border: 2px solid;
@@ -93,7 +98,7 @@ form button {
 }
 
 form button:hover {
-    color: #221212;
+    color: #0a0a0a;
     transition: color 0.3=2s ease-in-out; 
 }
 form {
@@ -101,3 +106,41 @@ form {
     padding: 40px;
 }
 
+
+/* utilities */
+
+.flex {
+    display: flex;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.padd-10 {
+    padding-right: 10px;
+}

@@ -56,12 +56,13 @@ header {
 }
 
 section#about p {
-    margin: 20px auto;
+    margin: 50px auto;
     margin-bottom: 100px;
     max-width: 70%;
     word-break: break-word;
     text-align: center;
     color: white;
+    font-size: 1.5rem;
 }
 
 section#about {
@@ -74,7 +75,7 @@ section {
 }
 
 section h2 {
-    margin: 40px;
+    margin: 10px;
     color: white;
     font-size: 2rem;
     box-shadow: 2px 2px 2px gray;
@@ -100,6 +101,7 @@ section#services p {
     word-break: break-word;
     text-align: center;
     color: white;
+    font-size: 1.5rem;
 }
 
 .service {

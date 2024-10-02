@@ -11,25 +11,37 @@
   <div class="container">
     <form id="registerForm">
       <h2>Create acount</h2>
-      <label for="nombres">Names:</label>
-      <input type="text" id="nombres" required>
-  
-      <label for="apellidos">LastNames:</label>
-      <input type="text" id="apellidos" required>
-  
-      <label for="correo">Email:</label>
-      <input type="email" id="correo" required>
-  
-      <label for="contraseña">Password:</label>
+      <section class="flex m-auto justify-around gap-10">
+        <div class="w-100">
+          <label for="nombres">Names:</label>
+          <input type="text" id="nombres" required>
+        </div>
+
+        <div class="w-100">
+          <label for="apellidos">LastNames:</label>
+          <input type="text" id="apellidos" required>
+        </div>
+      </section>
+      <section class="flex m-auto justify-around gap-10">
+        <div class="w-100">
+          <label for="correo">Email:</label>
+          <input type="email" id="correo" required>
+        </div>
+
+        <div class="w-100">
+          <label for="contraseña">Password:</label>
       <input type="password" id="contraseña" required>
-  
+        </div>
+      </section>
       <label for="genero">Generate:</label>
-      <select id="genero" required>
-        <option value="">Choose...</option>
-        <option value="masculino">Male</option>
-        <option value="femenino">Female</option>
-        <option value="otro">Other</option>
-      </select>
+      <div class="w-100 padd-10"">
+        <select id="genero" class="w-50" required>
+          <option value="">Choose...</option>
+          <option value="masculino">Male</option>
+          <option value="femenino">Female</option>
+          <option value="otro">Other</option>
+        </select>
+      </div>
   
       <button type="submit">Register</button>
     </form>

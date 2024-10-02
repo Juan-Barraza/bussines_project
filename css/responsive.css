@@ -1,43 +1,57 @@
 @media only screen and (max-width: 480px) {
-    nav .logo, nav ul {
-      float: none;
-      text-align: center;
-    }
-  
-    nav ul li {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    section#about img {
-      width: 90%;
-    }
-    
-    .container {
-      padding: 20px; 
+
+  nav .logo,
+  nav ul {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section#about img {
+    width: 90%;
+  }
+
+  .container {
+    max-width: 100%;
   }
 
   form {
-      width: 100%; 
-      padding: 10px; 
+    width: 100%;
+    padding: 10px;
+  }
+
+  section.flex {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  select.w-50{
+    width: 100%;
+  }
+
+  .w-100 {
+    width: 100%;
   }
 
   form#registerForm h2 {
-      font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
-  form input, form select {
-      font-size: 1rem; 
-      padding: 15px; 
+  form input,
+  form select,
+  form button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 15px;
   }
 
   form button {
-      font-size: 1rem; 
-      padding: 10px;
+    margin-top: 20px;
   }
 
-  form#registerForm label {
-      font-size: 1rem; 
-      margin-bottom: 10px; 
-  }
-  }
+
+}
