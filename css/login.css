@@ -6,12 +6,11 @@
     box-sizing: border-box;
 }
 
-
-.container {
-    min-height: 100vh;
+.containerLogin {
+    min-height: 60vh;
     justify-content: center;
     box-sizing: border-box;
-    max-width: 800px;
+    max-width: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -22,21 +21,25 @@
     background-position: center;
     padding: 30px;
     border-radius: 5px;
+    margin-top: 10%;
 }
+
+
 body {
     font-family: "Lora", serif;
-    color: #fcfcfc;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
-        url("/img/banner.jpg");
+    color: #080808;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
+    url("/img/img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-form#registerForm h2 {
+form#loginForm h2 {
     margin: 40px;
     color: white;
     font-size: 3rem;
@@ -44,44 +47,28 @@ form#registerForm h2 {
     font-family: "Lora", serif;
 }
 
-form#registerForm h2:hover {
+form#loginForm h2:hover {
     color: #000000;
     transition: color 0.2s ease;
 }
 
-form#registerForm label {
+
+form#loginForm label {
     padding-bottom: 10px;
     margin-bottom: 50%;
-    font-size: 1rem;
+    font-size:  1rem;
     letter-spacing: 0.05em;
+    color: white;
 }
 
 
-form#registerForm label:hover {
-    color: #000000;
-    transition: color 0.3s ease-in-out; 
-}
-
-form input {
-    border: 2px solid rgb(214, 214, 214);
+form#loginForm input {
+    border-radius: 10px;
+    border: 2px solid grey;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 10px;
     margin-bottom: 30px;
-}
-
-
-
-form select {
-    border-radius: 1px;
-    border: 2px solid rgb(228, 225, 225);
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-bottom: 50px;
-
 }
 
 form button {
@@ -96,69 +83,22 @@ form button {
     margin-top: 10px;
 }
 
-form button:hover {
-    color: #0a0a0a;
-    transition: color 0.2s ease-in-out; 
-}
-form {
-    margin: auto;
-    padding: 40px;
-}
-
-.sign-in {
+.sign-up {
     text-align: center;
     margin-top: 40px;
-  }
-  
-  .sign-in p {
+}
+
+.sign-up p {
     font-size: 1rem;
-    color: #ffffff;
-  }
-  
-  .sign-in a {
-    color: #00bfff;
+    color: white;
+}
+
+.sign-up a {
+    color: red;
     text-decoration: none;
-  }
-  
-  .sign-in a:hover {
-    text-decoration: underline; 
-  }
-  
-
-/* utilities */
-
-.flex {
-    display: flex;
 }
 
-.m-auto {
-    margin: auto;
-}
-
-.justify-around {
-    justify-content: space-around;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-75 {
-    width: 75%;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.gap-5 {
-    gap: 5px;
-}
-
-.gap-10 {
-    gap: 10px;
-}
-
-.padd-10 {
-    padding-right: 10px;
+.sign-up a:hover {
+    color: blue;
+    transition: color 0.2s ease;
 }
