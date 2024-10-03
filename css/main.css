@@ -43,6 +43,10 @@ nav ul li a {
     line-height: 60px;
 }
 
+nav li {
+    color: rgb(102, 121, 195);
+}
+
 header {
     background-image: url("/img/banner.jpg");
     background-color: rgba(79, 74, 74, 0.5);
