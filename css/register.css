@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
-        url("/img/image.png");
+        url("/image/image.png");
     background-size: cover;
     background-position: center;
     padding: 30px;
@@ -28,7 +28,7 @@ body {
     color: #fcfcfc;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
-        url("/img/banner.jpg");
+        url("/image/banner.jpg");
     margin: 0;
     display: flex;
     justify-content: center;

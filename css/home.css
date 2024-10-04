@@ -11,7 +11,7 @@ body {
     color: #080808;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
-    url("/img/banner.jpg");
+    url("/image/banner.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .header-home {
-    background-image: url("/img/img.jpg");
+    background-image: url("/image/img.jpg");
     background-color: rgba(79, 74, 74, 0.5);
     background-blend-mode: darken;
     text-align: center;
