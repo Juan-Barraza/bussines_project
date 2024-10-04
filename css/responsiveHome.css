@@ -1,0 +1,53 @@
+@media only screen and (max-width: 480px) {
+    .nav-max {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .nav-max .logo-2 img {
+      height: 150px;
+      margin-left: 90px;
+      display: block;
+    }
+
+    .header-home {
+      padding: 100px 0;
+      font-size: 1em;
+      background-position: center;
+      background-size: cover; 
+      background-repeat: no-repeat; 
+    }
+  
+    .shop-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .shop img {
+      max-width: 100%;
+    }
+  
+    #shopping h2 {
+      font-size: 2em;
+    }
+  
+    #shopping .shop button {
+      padding: 10px 20px;
+      font-size: 0.9em;
+      width: 50%;
+    }
+  
+    #reviews h2 {
+      font-size: 2em;
+    }
+  
+    .review h3 {
+      font-size: 1em;
+    }
+  
+    .review p {
+      font-size: 0.85em;
+    }
+  }
