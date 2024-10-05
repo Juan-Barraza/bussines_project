@@ -50,6 +50,11 @@
     max-width: 100%;
   }
 
+  .services .service p {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
   .containerLogin {
     max-width: 100%;
   }
