@@ -61,7 +61,7 @@ header {
 
 section#about p {
     margin: 50px auto;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     max-width: 70%;
     word-break: break-word;
     text-align: center;
@@ -69,7 +69,12 @@ section#about p {
     font-size: 1.5rem;
 }
 
-section#about {
+.title {
+    color:#b3b1ca;
+}
+
+#about {
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -78,19 +83,14 @@ section {
     text-align: center;
 }
 
-section h2 {
+#about h2 {
     margin: 10px;
     color: white;
-    font-size: 2rem;
+    font-size: 3.5rem;
     box-shadow: 2px 2px 2px gray;
 }
 
-section h3 {
-    margin: 70px;
-    color: #fffffff2;
-    box-shadow: 0px 2px 2px rgb(126, 115, 115);
-    font-size: 1.4rem;
-}
+
 
 section#about img {
     width: 60%;
@@ -99,24 +99,131 @@ section#about img {
     box-shadow: 0 10px 25px rgba(234, 226, 226, 0.5);
 }
 
-section#services p {
+.service {
+    position: relative;
+}
+
+.service p {
     margin: 20px auto;
     max-width: 50%;
     word-break: break-word;
     text-align: center;
+    color: rgb(250, 251, 255);
+    font-size: 1.5em;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+
+.service:hover p {
+    opacity: 1;
+    max-height: 200px;
+}
+
+#services {
+    background-color: rgb(112, 99, 99);
     color: white;
-    font-size: 1.5rem;
+    text-align: center;
 }
 
-.service {
-    margin: 50px;
+#services .container {
+    padding: 50px 0px;
 }
 
-section#services img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 0 auto;
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+#services .container h3 {
+    font-size: 3rem;
+}
+
+#services .container h2 {
+    font-size: 3.5rem;
+    margin-bottom: 100px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+#services .container p {
+    font-size: 1.4em;
+}
+
+#services .service {
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.service:nth-child(1){
+    background-image: linear-gradient(0deg, 
+    rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
+    url("/image/image.png");
+}
+
+.service:nth-child(2){
+    background-image: linear-gradient(0deg, 
+    rgba(0, 0, 0, 0.6), rgba(30, 26, 26, 0.6)),
+    url("/image/banner.jpg");
+}
+
+
+#reviews {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#reviews h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.review-category {
+    margin-bottom: 40px;
+}
+
+.review-category h3 {
+    color: #fffdfd;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+.review .p  {
+    margin: 0 0 10px;
+    color: #666666;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.review .author {
+    font-weight: bold;
+    color: #333;
+}
+
+.stars  {
+    color: #ffdb0c;
+    font-size: 1.8em;
 }
 
 footer {

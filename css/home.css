@@ -81,7 +81,7 @@ body {
 }
 
 .shop img {
-    margin-top: 30%;
+    margin-top: 10%;
     max-width: 100%;
     height: auto;
     display: block;
@@ -91,6 +91,11 @@ body {
 
 .shop img:hover {
     transform: translateY(10px);
+}
+
+.shop h3 {
+    color: #fff;
+    font-size: 2rem;
 }
 
 #shopping .shop button {
@@ -112,67 +117,6 @@ body {
     grid-template-columns: repeat(2, 1fr); 
     gap: 90px; 
 }
-
-#reviews {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-#reviews h2 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    margin-top: 150px;
-}
-
-.review-category {
-    margin-bottom: 40px;
-}
-
-.review-category h3 {
-    color: #fffdfd;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.review-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.review {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.review:hover {
-    transform: translateY(-5px);
-}
-
-.review .p  {
-    margin: 0 0 10px;
-    color: #666666;
-    font-size: 1em;
-    line-height: 1.6;
-}
-
-.review .author {
-    font-weight: bold;
-    color: #333;
-}
-
-.stars  {
-    color: #ffdb0c;
-    font-size: 1.8em;
-}
-
 
 footer {
     text-align: center;
