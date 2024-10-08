@@ -47,6 +47,14 @@ nav li {
     color: rgb(102, 121, 195);
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.border-t {
+    display: inline-block;
+}
+
 header {
     background-image: url("/image/banner.jpg");
     background-color: rgba(79, 74, 74, 0.5);

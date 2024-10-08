@@ -69,28 +69,21 @@ window.addEventListener('load', function() {
 
 
   // Select elements
-  const navLinks = document.getElementById('nav-links-2');
-  // const registerForm = document.getElementById('registerForm');
-  // const containerLogin = document.querySelector('.containerLogin');
-  
+  const userInfo = document.getElementById('user-info');
+
   if (activeUser) {
-    const userItem = document.createElement('li');
-    userItem.textContent = activeUser.name ; 
-    navLinks.appendChild(userItem);
+    // Create list item for user's name
+    const userItem = document.createElement('span');
+    userItem.classList.add('user-item')
+    userItem.textContent = activeUser.name;
+    userInfo.appendChild(userItem);
     
     // Element to log out 
     const logoutItem = document.createElement('li');
     const logoutLink = document.createElement('a');
     logoutLink.href = '#';
     logoutLink.textContent = 'Log out';
-
-    // const elementsToHide = document.getElementsByClassName("active-hide");
-    // console.log(elementsToHide);
-
-    // hide login and register 
-    // for (const e of elementsToHide) {
-    //   e.style.display = "none";
-    // }
+    logoutLink.classList.add('logout-link');
 
     logoutLink.addEventListener('click', function() {
       // Remove user of sessionStorage
@@ -100,9 +93,16 @@ window.addEventListener('load', function() {
       // Reload page to reset
       //window.location.reload();
     });
-
     logoutItem.appendChild(logoutLink);
-    navLinks.appendChild(logoutItem);
+    userInfo.appendChild(logoutItem);
   }
 });
 
+// menu
+
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+navToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+})

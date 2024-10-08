@@ -9,20 +9,25 @@
   <title>Landy detalle</title>
 </head>
 <body>
-
   <nav>
     <div class="logo">
       <img src="image/logo.jpg" alt="Logo of company">
     </div>
-    <ul id="nav-links">
+    <div class="border-btn">
+      <button class="nav-toggle btn-float" aria-label="toggle navigation">
+        ☰
+      </button>
+    </div>
+    <ul id="nav-links" class="nav-menu">
       <li><a href="index.html">Start</a></li>
       <li><a href="#about">About us</a></li>
       <li><a href="#services">Services</a></li>
-      <li class="active-hide"><a href="register.html">Register</a></li>
-      <li class="active-hide"><a href="login.html">Login</a></li>
+      <div class="border-t border-gray-700 p-4">
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+      </div>
     </ul>
   </nav>
-
   <header>
     <h1>Welcome to Landy Detalle</h1>
     <p>Ideal details for all types of occasion, we help you to surprise your favorite person</p>

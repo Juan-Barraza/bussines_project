@@ -4,29 +4,92 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
 
   }
 
   nav .logo img {
-    height: 150px;
+    height: 130px;
   }
 
   nav ul {
     list-style: none;
-    margin-top: 20px;
     font-size: 1.2rem;
   }
 
   nav ul li {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    height: 100vh;
+    background-color: #0f0f0f;
+    transition: right 0.3s ease-in-out; 
+    flex-direction: column;
+    width: 50%;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 20px;
+    justify-content: flex-start;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+}
+
+  .btn-float {
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    
+  }
+
+  .border-btn button{
+    background-color: #000000;
+    color: white;
+    border-radius: 50%; 
+    width: 50px;            
+    height: 50px;           
+    display: block; 
+    margin: 10px;
+    z-index: 1100;  
+  }
+
+  .border-t {
+    border-top: 1px solid rgba(55, 65, 81, 1);
+  }
+
+  .border-gray-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-border-opacity));
+  }
+
+  .p-4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .nav-menu.open {
+    display: flex;
   }
 
   header {
     padding: 50px;
     margin-bottom: 220px;
-    background-position: center; 
-    background-size: cover;      
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -36,12 +99,13 @@
 
   section#services img {
     width: 90%;
-    
+
   }
 
   section#about p {
     font-size: 1.2em;
   }
+
   section#about img {
     width: 90%;
   }
