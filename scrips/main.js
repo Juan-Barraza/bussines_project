@@ -69,15 +69,14 @@ window.addEventListener('load', function() {
 
 
   // Select elements
-  const userInfo = document.getElementById('user-info');
+  const navLinks = document.getElementById('nav-links-2');
 
   if (activeUser) {
     // Create list item for user's name
-    const userItem = document.createElement('span');
-    userItem.classList.add('user-item')
+    const userItem = document.createElement('li');
     userItem.textContent = activeUser.name;
-    userInfo.appendChild(userItem);
-    
+    navLinks.appendChild(userItem);
+    userItem.classList.add('user-item', 'border-gray-700', 'border-t', 'p-4');
     // Element to log out 
     const logoutItem = document.createElement('li');
     const logoutLink = document.createElement('a');
@@ -94,7 +93,7 @@ window.addEventListener('load', function() {
       //window.location.reload();
     });
     logoutItem.appendChild(logoutLink);
-    userInfo.appendChild(logoutItem);
+    navLinks.appendChild(logoutItem);
   }
 });
 

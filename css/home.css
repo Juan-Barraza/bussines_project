@@ -29,13 +29,12 @@ body {
 
 .nav-max ul {
     list-style-type: none;
-    float: left;
     display: flex;
+    align-items: center;
 }
 
-.nav-max ul li {
-    display: inline-block;
-    margin: 0 10px;
+.nav-max ul .user-item, .nav-max ul .logout-link {
+    margin-left: auto;
 }
 
 .nav-max ul li a {
@@ -49,16 +48,11 @@ body {
     color: rgb(102, 121, 195);
     list-style-type: none;
     font-size: 1.2em;
-    float: left;
+    padding: 20px;
 }  
-#user-info {
-    text-align: right;
-    margin: 20px;
-}
 
-#user-info .logout-link {
-    color: #f7f2f2;
-    text-decoration: none;
+.border-t {
+    display: inline-block;
 }
 
 .nav-toggle {
